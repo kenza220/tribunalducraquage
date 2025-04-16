@@ -49,6 +49,64 @@
   </style>
 </head>
 <body>
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Verdict Approche</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .hourglass {
+      width: 60px;
+      height: 60px;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      border-top: 4px solid transparent;
+      animation: spin 1s linear infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .message {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-align: center;
+      max-width: 90%;
+      opacity: 0.8;
+    }
+
+    img {
+      max-width: 200px;
+      opacity: 0.4;
+      filter: blur(4px);
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/colonel-floute.jpg" alt="Colonel masqué">
+  <img src="colonel-floute.jpg" alt="Colonel masqué">
+  <div class="hourglass"></div>
+  <div class="message">⏳ J-14 avant le verdict ⏳</div>
+</body>
+</html>
+
   <img src="colonel-floute.jpg" alt="Colonel masqué">
   <div class="hourglass"></div>
   <div class="message">⏳ J-14 avant le verdict ⏳</div>
