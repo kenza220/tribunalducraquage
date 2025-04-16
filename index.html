@@ -10,11 +10,25 @@
       color: #fff;
       font-family: 'Courier New', monospace;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       height: 100vh;
       margin: 0;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+
+    .colonel {
+      max-width: 200px;
+      opacity: 0.4;
+      filter: blur(4px);
+      margin-bottom: 30px;
     }
 
     .hourglass {
@@ -35,35 +49,20 @@
     .message {
       font-size: 1.5rem;
       letter-spacing: 2px;
-      text-align: center;
-      max-width: 90%;
       opacity: 0.8;
-    }
-
-    img {
-      max-width: 200px;
-      opacity: 0.4;
-      filter: blur(4px);
-      margin-bottom: 30px;
-    }
-
-    /* Ajout du logo KFC */
-    .logo {
-      max-width: 150px;
-      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <!-- Logo KFC en noir et blanc -->
-  <img class="logo" src="KFC_logo.svg.png" alt="Logo KFC">
-  
-  <!-- L'image floutée du Colonel -->
-  <img src="colonel-floute.jpg" alt="Colonel masqué">
-  
+  <!-- Logo KFC -->
+  <img src="KFC_logo.png" alt="Logo KFC" class="logo">
+
+  <!-- Image du Colonel masqué -->
+  <img src="colonel-floute.jpg" alt="Colonel masqué" class="colonel">
+
   <!-- Sablier animé -->
   <div class="hourglass"></div>
-  
+
   <!-- Message crypté -->
   <div class="message">⏳ J-14 avant le verdict ⏳</div>
 </body>
