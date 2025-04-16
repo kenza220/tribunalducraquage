@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribunal du Craquage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+        }
+        .colonel-img {
+            width: 300px;
+            height: 300px;
+            background: url('https://www.example.com/colonel-masque.jpg') center/cover no-repeat;
+            filter: blur(10px);
+            margin-bottom: 30px;
+            border-radius: 50%;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        .qr-code {
+            margin-top: 20px;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="colonel-img"></div>
+        <h1>J-14 avant le verdict</h1>
+        <p>Scan ce QR code pour découvrir le message crypté.</p>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.kfc-teaser.com&size=150x150" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
